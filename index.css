@@ -1,8 +1,47 @@
-body {
+/* body {
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}     
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}      */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
 
-h1 {
-    color: rgb(20, 4, 4);
-    text-align: end;
+body{
+    background-color: #ba181b;}
+
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+    margin: 12px;
+}
+
+.encabezado{ 
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #161a1d;
+}
+
+.logo-jr5{
+    height: 80%;
+    display: flex;
+   
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.fa-solid{ 
+    color: white;
+}
+
+.fa-brands  {
+    color:white
 }
