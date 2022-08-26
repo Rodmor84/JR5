@@ -2,19 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
 }
 
 body{
     background-color: #fdb813;}
 
+.fuente{@font-face {font-family: "Novecento Wide Bold";
+    src: url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.svg#Novecento Wide Bold") format("svg"); /* iOS 4.1- */
+}  
+}
 a{
     text-decoration: none;
     color: #fdb813;
     font-weight: 900;
     margin: 12px;
  }
-
 .encabezado{ 
     height: 70px;
     display: flex;
@@ -25,23 +32,19 @@ a{
     top: 0px;
     margin-bottom: 5px;
 }
-
 .logo-rmx{
-    height: 120%;
+    height: 150%;
     display: flex;
-
-   
+    align-content:flex-start  
 }
 .menu{
     list-style: none;
     display: flex;
     gap: 30px;
 }
-
 .menu i { 
     color: #d9d9d9;
 }
-
 .hero{
     width: 100%;
     height: 90%;
@@ -50,93 +53,94 @@ a{
     justify-content: center;
     align-items: center;
 }
-
 .inicio{
     width: 40%;
 }
-
-.inicio h2 {
-    color: #cc0b00;    
+.inicio h1 {
+    color: #cc0b00;   
 }
 .inicio p{
     color: #cc0b00;
+    font-size: 25px;
 }
-
 .inicio button{
-    width: 35%;
-    height: 30px;
+    width: 30%;
+    height: 35px;
     background-color: #d9d9d9;
     color: #7b4418;
-    font-size: 1.1em;
+    font-size: 20px;
     font-weight: 50;
     border-radius: 5px;
     border-style: none;
     margin-top: 5px;
 }
-
 .upgrade{
-    width: 40%;
+    width: 15%;
 }
-
-
 section{
     display: block;
 }
-
+.nosotros{    
+    padding : 10px;
+    margin: 30px;
+    text-align: center;
+    color: #fdb813;
+    background-color:#cc0b00; 
+}
+.about{
+    margin: 30 px
+    width: 100%;    
+    padding: 30px;
+    margin: 30Spx;
+    text-align: center;
+    color: #7b4418;
+    background-color:#d9d9d9;
+    }
+.descripcion{
+    display: block;
+    flex-direction: row;
+    align-content: center;
+    font-size: 25px;
+}    
 .productos{    
+    margin: 30px;
     padding : 10px;
     text-align: center;
     color: #fdb813;
     background-color:#cc0b00; 
 }
-/* contenedor2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 30px;
-    width: 100%;
-    height: 100%; */
 
-.contenedor-card{
-    height: 200px;
+.contenedor-card {
+    height: 420px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    
 }    
-.card{
-    
+.card-img-top{
+    width: auto;
+    height: auto;
+    border-radius: 80px;
+}
+.card{    
 display: flex;
-    padding: 20px;
     margin: 10px;
     border-style: none;
     text-align: justify;
-    border-radius: 10px;
+    border-radius:  100px;
     background-color: #d9d9d9;
     color: #7b4418;
-    
-}    
+}   
 
-.contenedor{
-    display: flex;
+.footer{
+    display:flex;
     justify-content: center;
+    position: relative;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    min-height: 100px;
+    flex-direction: column;
 }
-.cuadrado{
-    width: 120px;
-    height: 120px;
-    padding: 30px;
-    margin: 50px;
-    text-align: center;
-    border-radius: 20px;
-    color: #7b4418;
-    background-color:#d9d9d9;
+.instagram{
 }
