@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./archivos/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./fontawsome/fontawesome-free-6.1.2-web/css/all.css">
-  </head>
+</head>
 
 <body>
-    <header class="encabezado">
-        <img class="logo-rmx" src="/imagenes/Logo Rodmix.png" alt="logojr5">
-        <nav>
-            <ul class="menu">
-                <li><i class="fa-solid fa-house"></i><a href="http://">Home</a></li>
-                <li><i class="fa-solid fa-people-roof"></i></i><a href="http://">Quienes somos</a></li>
-                <li><i class="fa-solid fa-keyboard"></i><a href="http://">Productos</a></li>
-            </ul>
-        </nav>
-    </header>    
-    <section class="hero">
-        <div class="inicio">
-            <h1 class="fuente">NOS PROBASTE? NO TE LOS PODES PERDER</h1>
-            <P class="fuente">Los mas ricos productos sin gluten, 100% aptos y certificados</P>
-            <button>Contactanos</a></button>
+    <nav class="contenedor-nav">
+        <div class="contenedor-logo-navbar">
+            <img class="logo-navbar" src="/imagenes/Logo Rodmix.jpeg" alt="logormx">
         </div>
-        <img class="upgrade" src="/imagenes/GF.png" alt="img-upgrade">
-    </section>
+        <ul class="contenedor-nav-list-item">
+            <li class="nav-list-item"><i class="fa-solid fa-house"></i><a href=#>Home</a></li>
+            <li class="nav-list-item"><i class="fa-solid fa-people-roof"></i></i><a href=#>Quienes somos</a></li>
+            <li class="nav-list-item"><i class="fa-solid fa-keyboard"></i><a href=#>Productos</a></li>
+            <li class="nav-list-item"><i class="fa-solid fa-arrow-right-to-bracket"></i><a href=#>Ingresar</li>  
+            <li class="nav-list-item"><i class="fa-solid fa-user-check"></i><a href=#>Registrarse</li>
+    
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="inicio">
+                <h1 class="fuente">NOS PROBASTE? NO TE LOS PODES PERDER</h1>
+                <P class="fuente">Los mas ricos productos sin gluten, 100% aptos y certificados</P>
+                <button class="contact-button">Contactanos</a></button>
+            </div>
+            <img class="upgrade" src="/imagenes/GF.png" alt="">
+        </section>
+    </main>
     
     <section>
         <div>
             <h2 class="nosotros">NOSOTROS</h2>
         </div>
     </section>
-    <section>
+    <section class="somos">
         <div class="about">
             <p class="descripcion" class="fuente">Elaboramos productos sin gluten, aptos para celiacos. 
             Nuestro ideal es lograr productos que no difieran de los tradicionales, 
@@ -46,36 +48,33 @@
             </p>
         </div>
         </section>
-    <section>
+<section>
     <div>
         <h2 class="productos">NUESTROS PODUCTOS</h2>
     </div>
 </section>
 
-<section>
-    <div class="contenedor-card">
-        <div class="card" style="width: 18rem;">
+<section class="cards">
+    <div class="card">
+        <div>
         <img src="/imagenes/Reposteria.jpg" class="card-img-top" alt="...">
+        </div>
         <div class="card-body">
-          <h5 class="card-title" class="fuente">REPOSTERIA</h5>
+          <h3 class="card-title" class="fuente">REPOSTERIA</h3>
           <p class="card-text">Variedad de productos dulces en formato individual, totalmente envasados para mayor seguridad.</p>  
+          <button class="card-button">Ver productos</button>
         </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="/imagenes/Panificados.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card">
+        <div>
+        <img src="/imagenes/Panes.jpeg" class="card-img-top" alt="...">
+        </div>
         <div class="card-body">
-          <h5 class="card-title" class="fuente">PANIFICADOS</h5>
-          <p class="card-text">Los mas ricos panes, variedades para diferentes ocaciones y todo momento.</p>  
+        <h3 class="card-title" class="fuente">PANIFICADOS</h3>
+        <p class="card-text">Los mas ricos panes, variedades para diferentes ocaciones y todo momento.</p>  
+        <button class="card-button">Ver productos</button>
         </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/imagenes/Tortas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title" class="fuente">TORTAS</h5>
-              <p class="card-text">La torta perfecta la armas vos, nosotros ponemos la magia.</p>  
-            </div>
-            </div>  
+    </div>  
 </section>
 
 <footer>
