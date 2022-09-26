@@ -3,8 +3,9 @@
 }
 
 body{
-    background-color: #fdb813;
-margin: 0px ;}
+background-color: #fdb813;
+margin: 0px;
+}
 
 .fuente{@font-face {font-family: "Novecento Wide Bold";
     src: url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.eot"); /* IE9*/
@@ -12,141 +13,147 @@ margin: 0px ;}
     url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff2") format("woff2"), /* chrome firefox */
     url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff") format("woff"), /* chrome firefox */
     url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.svg#Novecento Wide Bold") format("svg"); /* iOS 4.1- */}  
+    url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.svg#Novecento Wide Bold") format("svg"); /* iOS 4.1- */}
 }
 .contenedor-nav{
-    position: sticky; 
+    position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    min-width: 250px;
     background-color: #cc0b00;
     border: #7b4418 1px solid;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 15px rgba(0,0,0,0.15);
 }
  .contenedor-logo-navbar{
     display: flex;
     align-items: center;
     width: 30%;
     max-width: 50px;
-    height: 100px;
  }
 .logo-navbar{
     border-radius: 100%;
     background-color: #cc0b00;
     width: 70px;
-    max-width: 150px;
-    height: 70px ;
-    margin-left: 30px;
-}
+ }
 .contenedor-nav-list-item{
     display: flex;
     justify-content: space-around;
     align-items:center ;
     list-style: none;
-    width: 80%;
+    width: max-content;
+    text-transform: uppercase;
  }
  a{
     text-decoration: none;
     color: #fff;
     font-weight: 900;
     margin: 12px;
-   }
-  
-.nav-list-item{ 
+}
+.nav-list-item{
     font-size: 1em;
     color: #d9d9d9;
 }
+.nav-list-item a:hover{
+    color: #fdb813  ;
+}
 main{
     display: flex;
-    padding-top: 55px;
+    margin-left: 40px;
     width: 100%;
-    height: 600px;
+    padding: 260px 0px;
     gap: 5px;
     min-width: 250px;
 }
 .hero{
     width: 100%;
-    height: 90%;
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .inicio{
-    width: 40%;
+    width: 60%;
 }
 .inicio h1 {
-    color: #cc0b00;   
+    color: #cc0b00;
 }
 .inicio p{
     color: #cc0b00;
     font-size: 25px;
 }
 .contact-button{
-    width: 70%;
-    height: 35px;
+    width: auto;
     background-color: #cc0b00;
     color: #d9d9d9;
     font-size: 20px;
-    font-weight: 1,2;
     border-radius: 5px;
     border-style: none;
-    margin-top: 5px;   
-}
-.upgrade{
-    width: 15%;
-}
-.somos{
-    width: 100%;
-    height: 1200px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.449);
     }
-.nosotros{    
+.glufree{
+    width: 60%;
+}.nosotros{
+    width: 100%;
     padding : 10px;
-    margin: 30px;
     text-align: center;
     color: #fff;
-    background-color:#cc0b00; 
+    background-color:#cc0b00;
     border: #7b4418 1px solid;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.15);
 }
 .about{
-    margin: 30px;
-    height: 6   00px;
-    width: 100%; 
+    width: 100%;
     padding: 30px;
-    margin: 30px;
-    border: #7b4418 1px solid;
+    margin: 3px;
+    border-radius: 5px;
     text-align: center;
-    color: #7b4418;
-    background-color: #d9d9d9df;
+    color: #cc0a00cf  ;
+    background-image: url("./imagenes/Brownie-cov.JPG");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
     }
+
 .descripcion{
-    display: block;
-    flex-direction: row;
+    text-align: center;
     align-content: center;
+    justify-content : center;
     font-size: 50px;
-}    
-.productos{    
-    margin: 30px;
+    line-height:230%;
+}
+.productos{
+width: 100%;
     padding : 10px;
     text-align: center;
     color: #fff;
-    background-color:#cc0b00; 
+    background-color:#cc0b00;
     border: #7b4418 1px solid;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.15);
 }
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 55px;
+    padding: 55px;
     width: 100%;
     height: auto;
     gap: 5px;
 }
-.card{    
+.card-index{
     width: 80%;
-    max-width: 280px;    
+    max-width: 280px;
     border-radius: 10px;
     padding: 5px;
     background-color: #fdb813;
@@ -155,7 +162,9 @@ main{
 .card-img-top{
     width: 100%;
     border-radius: 10px 10px 10px 10px ;
-    border: #7b4418 0.01px solid;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
 }
 .card-body{
     display: flex;
@@ -170,102 +179,84 @@ main{
     text-align: center;
     font-size: 20px;
     font-weight: 200;
-    
 }
 .card-button{
-    width: 70%;
-    height: 35px;
     background-color: #cc0b00;
+    border: solid 1px #610601f8;
     color: #fff;
     font-size: 20px;
-    font-weight: 1,2;
     border-radius: 5px;
-    border-style: none;
-    margin-top: 5px;   
-    margin-bottom: 5px;
-
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
 }
-/* LOGIN CSS STYLE*/
+.consulta{
+    padding-top: 120px;
+}
+
+
+/* LOGS CSS STYLE*/
 .contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
     width: 100%;
-    height: 100%;
 }
-
 .central {
-    max-width: 320px;
+    max-width: 420px;
     width: 100%;
 }
-
 .titulo {
     font-size: 250%;
     color:#d9d9d9;
     text-align: center;
     margin-bottom: 20px;
 }
-
-.login {
+.log {
     width: 100%;
     padding: 50px 30px;
     background-color: #cc0b00;
-
     -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-
-    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
 }
-
-.login input {
+.log input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
     color: #1b262c;
-
     display: block;
     width: 100%;
-    height: 40px;
-
     margin-bottom: 10px;
     padding: 5px 5px 5px 10px;
-
-    box-sizing: border-box;
-
     border: none;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
 }
-
-.login input::placeholder {
+.log input::placeholder {
     font-family: 'Overpass', sans-serif;
-    color: #E4E4E4;
+    color: #7b441855;
 }
-
-.login button {
-    height: 35px;
+.log button {
+    background-color: #cc0b00;
     color: #fff;
     font-size: 20px;
     font-weight: 1,2;
     border-radius: 5px;
-    border-style: none;
-    color:#cc0b00;
+    border-style: none  ;
     width: 100%;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    background-color: #fff;
-    margin-top: 10px;
+    margin-top: 5px 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.19);
 }
-
 
 .pie-form {
     font-size: 90%;
@@ -283,30 +274,75 @@ main{
 .pie-form a:hover{
     color: #fdb813  ;
 }
-
 .inferior {
     margin-top: 10px;
     font-size: 90%;
     text-align: center;
 }
-
 .inferior a {
     display: block;
     text-decoration: none;
     color: #E4E4E4;
     margin-bottom: 3px;
 }
-
 .inferior a:hover {
     color: #cc0b00    ;
 }
 
-.footer{
-    
-    width: 100%; 
-    display:flex;
-    align-items: center;    
-    justify-content: center;
-    min-height: 100px;
+/* CSS STYLE PRODUCTOS */
+.section-prod{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    gap: 5px;
+    max-width: 880px;
+    margin: auto;
 }
+
+.card{
+    width: 80%;
+    max-width: 280px;
+    color: #d9d9d9 ;
+    background-color: #cc0b00;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+.contenedor-imagen-card{
+    padding: 10%;
+    width: 90%;
+    height: 180px;
+    max-width: 200px;
+    margin: auto;
+}
+.imagen-card{
+    width: 100%;
+    height: 100%;
+}
+
+.card-contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.card-contenedor-texto p{
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content:center;
+    padding-top: 150px;
+
+}
+.footer a {
+    color: #cc0b00;
+}
+

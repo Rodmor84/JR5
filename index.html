@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title> Inicio </title>    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -13,13 +14,12 @@
         <div class="contenedor-logo-navbar">
         <a href="index.html"><img class="logo-navbar" src="/imagenes/Logo Rodmix.jpeg" alt="logormx"></a>
         </div>
-        <ul class="contenedor-nav-list-item">
-            <li class="nav-list-item"><i class="fa-solid fa-house"></i><a href=#>Home</a></li>
-            <li class="nav-list-item"><i class="fa-solid fa-people-roof"></i></i><a href=#quienes-somos>Quienes somos</a></li>
-            <li class="nav-list-item"><i class="fa-solid fa-keyboard"></i><a href=#nuestros-productos>Productos</a></li>
-            <li class="nav-list-item"><i class="fa-solid fa-arrow-right-to-bracket"></i><a href="/login.html">Ingresar</li>  
-            <li class="nav-list-item"><i class="fa-solid fa-user-check"></i><a href=#>Registrate</li>
-    
+            <ul class="contenedor-nav-list-item">
+            <li class="nav-list-item"><a href="index.html">Home</a></li>
+            <li class="nav-list-item"><a href="/index.html#quienes-somos">Quienes somos</a></li>
+            <li class="nav-list-item"><a href="/index.html#nuestros-productos">Productos</a></li>
+            <li class="nav-list-item"><a href="login.html">Ingresar</li>
+            <li class="nav-list-item"><a href="registro.html">Registrate</li>
         </ul>
     </nav>
     <main>
@@ -27,9 +27,13 @@
             <div class="inicio">
                 <h1 class="fuente">NOS PROBASTE? NO TE LOS PODES PERDER</h1>
                 <P class="fuente">Los mas ricos productos sin gluten, 100% aptos y certificados</P>
-                <button class="contact-button">Contactanos</a></button>
+                <a class="contact-button" href=#Contactanos>Contactanos</a>
             </div>
-            <img class="upgrade" src="/imagenes/GF.png" alt="">
+
+            </div>
+            <div class="img">            
+            <img class="glufree" src="/imagenes/GF.png" alt="">
+            </div>
         </section>
     </main>
     
@@ -37,49 +41,72 @@
         <div>
             <h2 class="nosotros" >NOSOTROS</h2>
         </div>
-    </section>
-    <section class="somos">
         <div class="about">
-            <p class="descripcion" class="fuente">Elaboramos productos sin gluten, aptos para celiacos. 
-            Nuestro ideal es lograr productos que no difieran de los tradicionales, 
-            pudiendo brindar la mejor experiencia.</p>
-            <p class="descripcion" class="fuente">Utilizamos materias primas de primera calidad y certificadas "SIN T.A.C.C". 
-                Asi mismo nuestros productos se encuentran certificados para seguridad y tranquilidad de los consumidores 
-            </p>
-        </div>
-        </section>
+            <div>    
+                <p class="descripcion" class="fuente">Elaboramos productos sin gluten, aptos para celiacos. 
+                Nuestro ideal es lograr productos que no difieran de los tradicionales, 
+                pudiendo brindar la mejor experiencia.</p>
+                <p class="descripcion" class="fuente">Utilizamos materias primas de primera calidad y certificadas "SIN T.A.C.C". 
+                </p>
+                <p class="descripcion" class="fuente">Asi mismo nuestros productos se encuentran certificados para seguridad y tranquilidad de los consumidores 
+                </p>
+            </div>
+            </div>
+    </section>
 <section>
     <div>
         <h2 class="productos" id="nuestros-productos">NUESTROS PODUCTOS</h2>
     </div>
 </section>
-
 <section class="cards">
-    <div class="card">
+    <div class="card-index">
         <div>
         <img src="/imagenes/Reposteria.jpg" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
           <h3 class="card-title" class="fuente">REPOSTERIA</h3>
           <p class="card-text">Variedad de productos dulces en formato individual, totalmente envasados para mayor seguridad.</p>  
-          <button class="card-button">Ver productos</button>
+          <a class="card-button" href="/productos.html">Ver productos</a>        </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card-index  ">
         <div>
         <img src="/imagenes/Panes.jpeg" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
         <h3 class="card-title" class="fuente">PANIFICADOS</h3>
         <p class="card-text">Los mas ricos panes, variedades para diferentes ocaciones y todo momento.</p>  
-        <button class="card-button">Ver productos</button>
-        </div>
+        <a class="card-button" href="/productos.html#panificados">Ver productos</a>        </div>
     </div>  
 </section>
-    
-<footer>
-<img class="footer" src="./imagenes/Fotter.png" alt="rmx-negro">
+<Section class="consulta">
+<div class="contenedor" id="Contactanos">
+    <div class="central">
+        <div class="log">
+            <div class="titulo">
+                Dejanos tu consulta
+            </div>
+            <form class="contact-form">
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+                <input type="email" placeholder="email" name="email" required>
+                <textarea name="Consulta" id="Consulta" cols="46" rows="10"></textarea>
+                <button class="Enviar" type="submit" title="Enviar" name="Enviar">Enviar</button>
+            </form>
+            <div class="pie-form">
+                <a href="/registro.html">¿No tienes Cuenta? Registrate</a>
+            </div>
+        </div>
+        <div class="inferior">
+            <a href="/index.html">Volver</a>
+        </div>
+    </div>
+</div>
+</Section>  
+<footer class="footer">
+    <div> 
+        <a>RODMIX Copyright®</a>
+    </div>
+</footer>   
 
-    
 </body>
 </html>
