@@ -15,6 +15,9 @@ margin: 0px;
     url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
     url("http://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.svg#Novecento Wide Bold") format("svg"); /* iOS 4.1- */}
 }
+
+
+
 .contenedor-nav{
     position: sticky;
     top: 0px;
@@ -334,6 +337,7 @@ width: 100%;
 }
 .card-contenedor-texto p{
     text-align: center;
+    padding: 5px;
 }
 
 .footer {
@@ -346,3 +350,65 @@ width: 100%;
     color: #cc0b00;
 }
 
+
+@media (max-width: 1200px) and (min-width: 576px) {
+    .body{
+        width: 70%;
+    }
+    
+    .contenedor-nav{
+         width: 70%;       
+        }
+     .contenedor-logo-navbar{
+        width:100%;
+    }
+    .logo-navbar{
+        width:100%;
+    }
+    .contenedor-nav-list-item{
+        width:70%;
+    }
+
+    .main{
+        width: 70%;
+    }
+    .hero{
+        width: 70%;
+    }
+     
+    .nosotros{
+        width: 70%;
+    }
+
+    .about{
+        width: 70%;
+        height: auto;
+    }
+    
+    .descripcion{
+        line-height:230%;
+    }
+    
+    .productos{
+    width: 70%;
+    }
+    
+    .cards{
+        width: 70%;
+    }
+    
+    .consulta{
+        width: 70%;    
+    }
+
+    .footer{
+        width: 70%;
+    }
+    
+
+@media (max-width: 600px) {
+    .rectangulo {
+        width: 100%;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+}
